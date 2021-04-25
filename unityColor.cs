@@ -22,7 +22,7 @@ public class CambiarColor : MonoBehaviour
     public void changeColor()
     {
         tarea = tareaHolder.transform.Find("Boton(Pleoticus)(Clone)");
-        adapter.PVcambiarColor(rojo,verde,azul,tarea);
+        adapter.serviceObject.PVcambiarColor(rojo,verde,azul,tarea);
     }
 
 }

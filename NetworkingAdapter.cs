@@ -1,8 +1,8 @@
 public class NetworkingAdapter : MonoBehaviour
 {
-    public NetworkingHandler serviceChat;
-    public NetworkingHandler serviceVoice;
-    public NetworkingHandler serviceObject;
+    public static NetworkingHandler serviceChat;
+    public static NetworkingHandler serviceVoice;
+    public static NetworkingHandler serviceObject;
 
 
     void Start()
@@ -10,5 +10,5 @@ public class NetworkingAdapter : MonoBehaviour
         //instanciar handlers
     }
 
-
+    // serviceObject.cambiarColor(...);
 }

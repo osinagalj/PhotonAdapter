@@ -1,9 +1,14 @@
 using Photon.Pun;
 
-public class PhotonHandler{
+public class PhotonHandler : MonoBehaviour, NetworkingHandler{
 
-    [SerializeField] private PhotonView photonView;
+  [SerializeField] private PhotonView photonView;
+    void Start()
+    {
+        //instanciar handlers
+    }
 
+    //metodos
     public void PVcambiarColor(byte rojo,byte verde,byte azul,Transform tarea)
     {
         if (tarea != null)
@@ -19,4 +24,5 @@ public class PhotonHandler{
     {
         tarea.GetComponent<Image>().color = new Color32(rojo2, verde2, azul2, 255);
     }
+
 }
