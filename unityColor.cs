@@ -12,17 +12,17 @@ public class CambiarColor : MonoBehaviour
     public GameObject tareaHolder;
     public Transform tarea;
 
-    public PhotonHandler photonHandler;
+    public NetworkingAdapter adapter;
 
     void Start()
     {
-
+        //instanciar adapter
     }
 
     public void changeColor()
     {
         tarea = tareaHolder.transform.Find("Boton(Pleoticus)(Clone)");
-        photonHandler.PVcambiarColor(rojo,verde,azul,tarea);
+        adapter.PVcambiarColor(rojo,verde,azul,tarea);
     }
 
 }
