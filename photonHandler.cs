@@ -4,7 +4,7 @@ public class PhotonHandler{
 
     [SerializeField] private PhotonView photonView;
 
-    public void PVcambiarColor(byte rojo,byte verde,byte azul;Transform tarea)
+    public void PVcambiarColor(byte rojo,byte verde,byte azul,Transform tarea)
     {
         if (tarea != null)
         {
